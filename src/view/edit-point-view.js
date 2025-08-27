@@ -1,6 +1,6 @@
 import { createElement } from '../render.js';
 
-function createFilterTemplate() {
+function createEditPointViewTemplate() {
   return (
     `<form class="event event--edit" action="#" method="post">
         <header class="event__header">
@@ -61,7 +61,7 @@ function createFilterTemplate() {
                         </div>
                       </fieldset>
                     </div>
-                  </div>
+                      </div>
 
                   <div class="event__field-group  event__field-group--destination">
                     <label class="event__label  event__type-output" for="event-destination-1">
@@ -158,9 +158,9 @@ function createFilterTemplate() {
   );
 }
 
-export default class FiltersView {
+export default class NewEditPointView {
   getTemplate() {
-    return createFilterTemplate();
+    return createEditPointViewTemplate();
   }
 
   getElement() {
